@@ -1,0 +1,76 @@
+{
+  "name": "obese-data",
+  "title": "Obese data",
+  "resources": [
+    {
+      "path": "obese_data.py",
+      "pathType": "local",
+      "name": "obese_data",
+      "format": "py",
+      "encoding": "ISO-8859-1"
+    },
+    {
+      "path": "data/data.csv",
+      "pathType": "local",
+      "name": "data",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "dialect": {
+        "delimiter": ",",
+        "quoteChar": "\""
+      },
+      "schema": {
+        "fields": [
+          {
+            "name": "Country",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "Overall rank",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "Overall mean BMI (kg/m2)",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "Female rank",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "Male rank",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "Female mean BMI (kg/m2)",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "Male mean BMI (kg/m2)",
+            "type": "number",
+            "format": "default"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    }
+  ],
+  "readme": "# obese-data\nA dataset of country rank by average BMI count\n",
+  "description": "# obese-data\nA dataset of country rank by average BMI count\n",
+  "licenses": [
+    {
+      "name": "ODC-PDDL",
+      "path": "http://opendatacommons.org/licenses/pddl/",
+      "title": "Open Data Commons Public Domain Dedication and License"
+    }
+  ]
+}
